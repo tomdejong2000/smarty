@@ -1,0 +1,388 @@
+body {
+    margin: 0;
+}
+
+.paralax1 {
+    background: url(background9.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}
+
+.paralax1 header {
+    width: 100%;
+    height: 25vh;
+    position: relative;
+    padding-top: 30vh;
+}
+
+.paralax1 p {
+    font-size: 5vh;
+    margin: 0;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    margin-left: 45%;
+    margin-top: 25vh;
+}
+
+.text1 p {
+    padding-left: 30vh;
+    padding-top: 3vh;
+}
+
+.mijngegevens {
+    width: 100%;
+    height: 54vh;
+    font-family: 'Merriweather', serif;
+    color: grey;
+    -webkit-box-shadow: inset 10px 10px 154px 14px rgba(0, 0, 0, 0.47);
+    -moz-box-shadow: inset 10px 10px 154px 14px rgba(0, 0, 0, 0.47);
+    box-shadow: inset 10px 10px 154px 14px rgba(0, 0, 0, 0.47);
+
+    background-color: white;
+
+}
+
+.mijngegevens header {
+    padding-bottom: 8vh;
+    font-size: 10vh;
+    font-weight: bold;
+    margin-left: 70vh;
+    padding-top: 4vh;
+}
+
+.mijngegevens p {
+    font-size: 4vh;
+    margin: 0 auto;
+    width: 80%
+
+}
+
+.paralax2 header {
+    width: 100%;
+    height: 15vh;
+    position: relative;
+
+}
+
+.paralax2 {
+    background: url(background8.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 85vh;
+    width: 100%;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    -webkit-box-shadow: inset 10px 10px 154px 14px rgba(0, 0, 0, 0.47);
+    -moz-box-shadow: inset 10px 10px 154px 14px rgba(0, 0, 0, 0.47);
+    box-shadow: inset 10px 10px 154px 14px rgba(0, 0, 0, 0.47);
+}
+
+.text2 {
+    width: 35%;
+    height: 65vh;
+    margin: 0 auto;
+    margin-top: 4vh;
+
+}
+
+.paralax3 header {
+    width: 100%;
+    height: 15vh;
+    position: relative;
+}
+
+.paralax3 {
+    height: 100vh;
+    width: 100%;
+    background: url(background10.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    -webkit-box-shadow: inset 10px 10px 154px 14px rgba(0, 0, 0, 0.47);
+    -moz-box-shadow: inset 10px 10px 154px 14px rgba(0, 0, 0, 0.47);
+    box-shadow: inset 10px 10px 154px 14px rgba(0, 0, 0, 0.47);
+}
+
+.slides {
+    width: 70%;
+    height: 105vh;
+    margin: 0 auto;
+
+}
+
+.paralax4 header {
+    width: 100%;
+    height: 15vh;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.85);
+}
+
+.paralax4 {
+    background: url(background7.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 115vh;
+    width: 100%;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.contact {
+    width: 40%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    float: left;
+    margin-left: 8%;
+}
+
+h1 {
+    color: white;
+    font-family: 'Merriweather', serif;
+    font-size: 13vh;
+    position: absolute;
+    margin-left: 60vh;
+    z-index: 1;
+    margin-top: 8vh;
+    animation-name: erin;
+    animation-duration: 4s;
+
+}
+
+@keyframes erin {
+    0% {
+        font-size: 0
+    }
+    100% {
+        font-size: 13vh
+    }
+}
+
+h2 {
+    color: white;
+    font-family: 'Merriweather', serif;
+    font-size: 10vh;
+    position: absolute;
+    margin-left: 60vh;
+    padding-top: 0;
+    margin-top: 1vh;
+
+}
+
+h3 {
+    color: white;
+    font-family: 'Merriweather', serif;
+    font-size: 10vh;
+    position: absolute;
+    margin-left: 55vh;
+    padding-top: 0;
+    margin-top: 1vh;
+}
+
+h4 {
+    color: white;
+    font-family: 'Merriweather', serif;
+    font-size: 10vh;
+    position: absolute;
+    margin-left: 70vh;
+    padding-top: 0;
+    margin-top: 1vh;
+}
+
+label {
+    display: block;
+    margin-top: 5vh;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    font-size: 4vh;
+    margin-left: 15vh;
+}
+
+input {
+    margin-left: 20vh;
+    width: 50vh;
+    margin-top: 2vh;
+    height: 4.5vh;
+    border-radius: 2vh;
+}
+
+textarea {
+    margin-left: 6vh;
+    margin-top: 2vh;
+    border-radius: 2vh;
+    font-size: 4vh;
+}
+
+nav {
+    width: 100%;
+    height: 6vh;
+    background-color: rgba(0, 0, 0, 0.95);
+    position: fixed;
+    top: 0;
+    z-index: 2;
+
+}
+
+.name {
+    margin-top: 0;
+    padding-top: 4vh
+}
+
+input[type="text"] {
+    font-size: 3.5vh;
+}
+
+input[type="email"] {
+    font-size: 3.5vh;
+}
+
+header ul li {
+    float: left;
+    list-style-type: none;
+    padding-left: 22vh;
+    font-size: 4vh;
+    font-family: 'Ubuntu', sans-serif;
+    margin-top: 0;
+}
+
+header ul {
+    margin-top: 0;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: black;
+    background-color: white;
+    border-radius: 14%;
+}
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 250px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.mySlides {
+    width: 100%;
+
+}
+
+.w3-display-left {
+    border-radius: 4vh;
+    height: 5vh;
+    width: 5vh;
+    position: absolute;
+    margin-top: 35vh;
+
+}
+
+.w3-display-right {
+    border-radius: 4vh;
+    height: 5vh;
+    width: 5vh;
+    margin-left: 133vh;
+    position: absolute;
+    margin-top: 35vh;
+}
+
+.w3-content {
+    padding-top: 9vh;
+
+}
+
+.h1 {
+    height: 0;
+    width: 0;
+    margin-top: 40vh;
+    position: absolute;
+}
+
+.h2 {
+    height: 0;
+    width: 0;
+    margin-top: 15vh;
+    position: absolute;
+}
+
+.h3 {
+    height: 0;
+    width: 0;
+    margin-top: 60vh;
+    position: absolute;
+}
+
+.h4 {
+    height: 0;
+    width: 0;
+    margin-top: 1vh;
+    position: absolute;
+}
+
+.text1 p {
+    font-size: 5vh;
+    margin: 0;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.gegevens {
+    width: 32%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    float: left;
+    margin-left: 4%;
+    margin-bottom: 0;
+    color: white;
+}
+
+.paralax4 ul {
+    margin-top: 0;
+    list-style-type: none;
+    padding-left: 8%;
+    font-size: 4vh;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+.paralax4 ul li {
+    padding-top: 6vh;
+}
+
+.knop {
+    background-color: black;
+    color: white;
+    font-size: 3.5vh;
+    font-family: 'Ubuntu', sans-serif;
+}
+.gegevens a{
+    color: white;
+}
+.gegevens a:hover{
+    color: black;
+}

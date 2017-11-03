@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link href="icon.png" rel="icon">
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+</head>
+<body>
+<!--de terug naar boven button-->
+<button onclick="topFunction()" id="myBtn" title="Terug">Top</button>
+<!-- de nav in de header die naar verschillende plekken in de pagina gaat-->
+<header>
+    <nav>
+        <ul>
+            <li><a href="#h1">Over mij</a></li>
+            <li><a href="#h2">Ervaring</a></li>
+            <li><a href="#h3">Projecten</a></li>
+            <li><a href="#h4">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<!--// de divs voor paralax backgrounds-->
+<div class="paralax1">
+    <header>
+        <h1>Wie ben ik?</h1>
+        <p>Scroll down</p>
+    </header>
+    <article class="text1">
+        <section id="h1" class="h1"></section>
+    </article>
+</div>
+<article class="mijngegevens">
+    <header>Over Mij</header>
+    <p>Ik ben Tom de Jong, ik ben 16 jaar oud</p>
+    <p>Ik zit in het eerste jaar van mijn applicatie en mediabeheer studie</p>
+    <section id="h2" class="h2"></section>
+</article>
+<article class="paralax2">
+    <header>
+        <h2>Mijn ervaring</h2>
+    </header>
+    <div class="text2">
+        <section id="h3" class="h3"></section>
+        <img src="niks.jpg">
+    </div>
+</article>
+
+<div class="paralax3">
+    <header>
+        <h3>Mijn projecten</h3>
+        <!--div met de slideshow-->
+    </header>
+    <div class="slides">
+        <div class="w3-content w3-display-container">
+            <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+            <img class="mySlides" src="screen2.jpg">
+            <img class="mySlides" src="screen1.jpg">
+            <img class="mySlides" src="screen3.jpg">
+            <img class="mySlides" src="screen4.jpg">
+
+            <section id="h4" class="h4"></section>
+        </div>
+    </div>
+</div>
+<div class="paralax4">
+    <header>
+        <h4>Contact</h4>
+    </header>
+    <form class="contact">
+        <label for="name" class="name"> Naam:</label>
+        <input type="text" id="name" required="required">
+
+        <label for="mail"> E-mail:</label>
+        <input type="email" id="mail" required="required">
+
+
+        <label for="overig">Type uw bericht:</label>
+        <textarea rows="9" cols="30" id="overig">
+
+    </textarea>
+
+        <div class="knopje">
+            <input class=knop type="submit">
+        </div>
+    </form>
+    <ul class="gegevens">
+        <li>Naam: Tom de Jong</li>
+        <li>Telefoon nummer: 0180133740</li>
+        <li>E-mail: Tomdejong2000@gmail.com </li>
+        <li>Adres: Thuis :)</li>
+        <li><a target="_blank" href="https://github.com/tomdejong2000">Mijn GitHub</a></li>
+        <li><a download href="Mijn%20CV.docx">Mijn CV</a></li>
+
+    </ul>
+</div>
+<script>
+    //    java script gevonden op internet die ik snap maar niet weet hoe ik het moet schrijven
+    window.onscroll = function () {
+        scrollFunction()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 500) {
+            document.getElementById("myBtn").style.display = "block";
+        } else {
+            document.getElementById("myBtn").style.display = "none";
+        }
+
+    }
+
+//javascript slides
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+
+    //    slides script
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+        showDivs(slideIndex += n);
+    }
+
+    function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) {
+            slideIndex = 1
+        }
+        if (n < 1) {
+            slideIndex = x.length
+        }
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        x[slideIndex - 1].style.display = "block";
+    }
+
+
+
+</script>
+
+</body>
+</html>
